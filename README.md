@@ -1,0 +1,83 @@
+# Pavan Kumar Mukkera
+
+**Community Copilot | Passionate Software Developer | Creator**  
+Based in the United Kingdom
+
+---
+
+## About Me
+Community-driven professional passionate about building inclusive tech ecosystems and empowering student innovation. As the Founder of **Technical Spaces**, I’ve collaborated with Microsoft, Reskilll, and Azure Developer Community to deliver high-impact events like Azure Developer Day and Copilot Day.
+
+I believe in using technology to connect people, inspire learning, and make a real-world impact.
+
+---
+
+## Tech Stack & Skills
+
+### **Development & DevOps**
+- **Frontend:** React, JavaScript, TailwindCSS, Astro, Next.js
+- **Backend:** Django REST Framework, Python, PostgreSQL
+- **DevOps:** Azure DevOps, GitHub Actions, Docker, Vercel, Render
+- **Tools:** Power BI, Azure Logic Apps, Firebase, Stripe
+
+### **Community & Strategy**
+- **Leadership:** Program & People Management, Stakeholder Engagement
+- **Strategy:** Go-to-Market (GTM) Strategy, Event Planning, Public Relations
+- **Design:** Canva, Figma
+
+---
+
+## Professional Experience
+
+### **Technical Strategy & Engagement Intern | CKC Cares Ventures Ltd (London, UK)**
+*Apr 2025 – Jun 2025*
+- Contributed to the **House of YOU** platform through UX improvements, content structuring, and visual audits.
+- Assisted in **AI First Aid** workshop design and coordination.
+- Enhanced UI responsiveness and performance on Shopify-based platforms.
+
+### **Azure Community Lead | Reskilll (India & UK)**
+*Sep 2023 – Oct 2024*
+- Organized **Azure Developer Day** and **Copilot Day** events in collaboration with Microsoft.
+- Managed community engagement across 100+ institutions.
+- Mentored students in Azure DevOps, GitHub Copilot, and AI skills.
+
+### **Business Analyst & Process Consultant | Bizaek.com (Remote)**
+*Jun 2024 – Present*
+- Digital transformation consulting for small and mid-sized businesses.
+- Developed workflow automations and analytics dashboards using **Power BI** and **Azure Logic Apps**.
+- Improved task efficiency by 30% through process optimization frameworks.
+
+### **Community & GTM Consultant | PossoBuild (Remote)**
+*Jan 2024 – Jun 2024*
+- Supported branding, community partnerships, and GTM strategies.
+- Created marketing content and assets for Paparizzaa UK and PossoBuild Home Care.
+
+---
+
+## Featured Projects
+
+- **Technical Spaces:** Founder & Strategist. An AI & Cloud-focused consulting and community venture.
+- **Done & Dusted:** Full-stack cleaning service booking platform (React + Django REST).
+- **Cambroos:** Next.js-based equipment rental platform with Stripe integration.
+- **Automated Payroll System:** GPS-based attendance tracking system with Django.
+- **CKC Cares Shopify:** UX audit and technical store setup for digital wellness.
+
+---
+
+## Speaker Sessions & Highlights
+
+- **AI Forward:** Online Webinar (Apr 2025) – "AI & Future Technologies".
+- **GitHub Copilot & TheYouthTalks Launch:** Microsoft Campus, Hyderabad (Jan 2024).
+- **AI Skills Fest:** Host & Speaker (Mar 2025, UK) – Fundamentals of Gen AI.
+- **Azure Copilot Day:** Event Lead (Jul 2024, Warangal).
+- **AI-Powered Clarity:** Workshop Facilitator (Jul 2025, London).
+
+---
+
+## Connect with Me
+- **Portfolio:** [pavankumar.dev](https://pavankumar.dev)
+- **LinkedIn:** [pavankumarmukkera](https://www.linkedin.com/in/pavankumarmukkera)
+- **GitHub:** [pavankumarmukkera](https://github.com/pavankumarmukkera)
+- **Email:** mukkera474@gmail.com
+- **Twitter:** [Twitter Profile](https://twitter.com/)
+

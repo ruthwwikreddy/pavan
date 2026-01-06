@@ -1,0 +1,410 @@
+<html lang="en" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavan Kumar Mukkera - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #09090b; /* zinc-950 */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: #d4d4d8; /* zinc-300 */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #09090b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #27272a;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3f3f46;
+        }
+
+        /* Icon Stroke Width Override */
+        .iconify {
+            stroke-width: 1.5px !important;
+        }
+        
+        /* Animations */
+        @keyframes fade-in-up {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-reveal {
+            animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            opacity: 0;
+        }
+        
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+        
+        .glass-nav {
+            background: rgba(9, 9, 11, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        /* Gradient Text */
+        .text-gradient {
+            background: linear-gradient(to bottom right, #ffffff, #a1a1aa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bento-card {
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .bento-card:hover {
+            transform: translateY(-2px);
+            border-color: #52525b;
+        }
+    </style>
+</head>
+<body class="selection:bg-white/20 selection:text-white relative overflow-x-hidden">
+
+    <!-- Background Gradients -->
+    <div class="fixed inset-0 z-[-1] pointer-events-none">
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-500/5 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-500/5 rounded-full blur-[120px]"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav border-b border-white/5">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-sm font-medium tracking-tight text-white flex items-center gap-2 group">
+                <span class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-xs group-hover:bg-white group-hover:text-black transition-colors duration-300">PK</span>
+                <span class="hidden sm:inline">Pavan Kumar Mukkera</span>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm text-zinc-400">
+                <a href="#work" class="hover:text-white transition-colors">Work</a>
+                <a href="#stack" class="hover:text-white transition-colors">Stack</a>
+                <a href="#experience" class="hover:text-white transition-colors">Process</a>
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <span id="uk-time" class="text-xs font-mono text-zinc-500 hidden sm:block"></span>
+                <a href="mailto:mukkera474@gmail.com" class="text-xs bg-white text-black px-3 py-1.5 rounded-full font-medium hover:bg-zinc-200 transition-colors">
+                    Contact
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-24 px-6 max-w-6xl mx-auto space-y-32">
+
+        <!-- Hero Section -->
+        <section class="min-h-[60vh] flex flex-col justify-center animate-reveal">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 w-fit mb-8">
+                <span class="iconify text-green-400" data-icon="lucide:terminal"></span>
+                <span class="text-xs font-medium text-zinc-300 tracking-wide uppercase">Based in the United Kingdom</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-medium tracking-tighter text-white mb-6 leading-[0.9]">
+                Community <span class="text-zinc-500">Copilot.</span><br>
+                Software <span class="text-gradient">Creator.</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-zinc-400 max-w-2xl font-light leading-relaxed mb-10">
+                Passionate about building inclusive tech ecosystems and empowering student innovation. Founder of <strong class="text-white font-medium">Technical Spaces</strong>. Collaborating with Microsoft &amp; Azure Communities to deliver high-impact events.
+            </p>
+
+            <div class="flex flex-wrap gap-4">
+                <a href="#work" class="flex items-center gap-2 text-sm text-white border-b border-white/30 pb-0.5 hover:border-white transition-colors">
+                    View Featured Projects <span class="iconify" data-icon="lucide:arrow-down-right"></span>
+                </a>
+                <a href="https://github.com/pavankumarmukkera" target="_blank" class="flex items-center gap-2 text-sm text-zinc-500 hover:text-white transition-colors">
+                    <span class="iconify" data-icon="lucide:github"></span> GitHub
+                </a>
+                <a href="https://linkedin.com/in/pavankumarmukkera" target="_blank" class="flex items-center gap-2 text-sm text-zinc-500 hover:text-white transition-colors">
+                    <span class="iconify" data-icon="lucide:linkedin"></span> LinkedIn
+                </a>
+            </div>
+        </section>
+
+        <!-- Bento Grid: Featured Projects -->
+        <section id="work" class="animate-reveal delay-100">
+            <div class="flex items-end justify-between mb-12">
+                <h2 class="text-2xl font-medium tracking-tight text-white">Selected Work</h2>
+                <span class="text-xs text-zinc-500 uppercase tracking-widest">Case Studies</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Project 1: Technical Spaces (Large) -->
+                <div class="md:col-span-2 bento-card group relative overflow-hidden rounded-2xl border border-white/10 bg-zinc-900/40 p-8 h-[400px] flex flex-col justify-between">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
+                    <div class="relative z-10 flex justify-between items-start">
+                        <div class="p-3 bg-zinc-950/50 rounded-xl border border-white/5 backdrop-blur-sm">
+                            <span class="iconify text-white w-6 h-6" data-icon="lucide:cpu"></span>
+                        </div>
+                        <a href="#" class="text-xs bg-white/10 hover:bg-white/20 text-white px-3 py-1 rounded-full transition-colors">View Venture</a>
+                    </div>
+                    
+                    <div class="relative z-10 space-y-4">
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="text-[10px] uppercase tracking-wider text-zinc-400 border border-white/10 px-2 py-1 rounded-md">Strategy</span>
+                            <span class="text-[10px] uppercase tracking-wider text-zinc-400 border border-white/10 px-2 py-1 rounded-md">Community</span>
+                        </div>
+                        <h3 class="text-3xl font-medium text-white tracking-tight">Technical Spaces</h3>
+                        <p class="text-zinc-400 font-light max-w-md">Founder &amp; Strategist. An AI &amp; Cloud-focused consulting and community venture bridging the gap between students and industry giants like Microsoft.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2: Done & Dusted -->
+                <div class="bento-card group relative overflow-hidden rounded-2xl border border-white/10 bg-zinc-900/40 p-6 flex flex-col justify-between min-h-[300px]">
+                    <div class="relative z-10">
+                        <div class="mb-8 p-2 w-fit bg-zinc-950/50 rounded-lg border border-white/5">
+                            <span class="iconify text-white w-5 h-5" data-icon="lucide:sparkles"></span>
+                        </div>
+                        <h3 class="text-xl font-medium text-white tracking-tight mb-2">Done &amp; Dusted</h3>
+                        <p class="text-sm text-zinc-400 leading-relaxed mb-4">Full-stack cleaning service booking platform featuring real-time scheduling.</p>
+                        <div class="flex gap-2 flex-wrap mt-auto">
+                            <span class="text-[10px] text-zinc-500 bg-zinc-950 px-2 py-1 rounded">React</span>
+                            <span class="text-[10px] text-zinc-500 bg-zinc-950 px-2 py-1 rounded">Django</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Cambroos -->
+                <div class="bento-card group relative overflow-hidden rounded-2xl border border-white/10 bg-zinc-900/40 p-6 flex flex-col justify-between min-h-[300px]">
+                    <div class="relative z-10">
+                        <div class="mb-8 p-2 w-fit bg-zinc-950/50 rounded-lg border border-white/5">
+                            <span class="iconify text-white w-5 h-5" data-icon="lucide:camera"></span>
+                        </div>
+                        <h3 class="text-xl font-medium text-white tracking-tight mb-2">Cambroos</h3>
+                        <p class="text-sm text-zinc-400 leading-relaxed mb-4">Equipment rental platform with seamless Stripe payments integration.</p>
+                        <div class="flex gap-2 flex-wrap mt-auto">
+                            <span class="text-[10px] text-zinc-500 bg-zinc-950 px-2 py-1 rounded">Next.js</span>
+                            <span class="text-[10px] text-zinc-500 bg-zinc-950 px-2 py-1 rounded">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: CKC Cares -->
+                <div class="md:col-span-2 bento-card group relative overflow-hidden rounded-2xl border border-white/10 bg-zinc-900/40 p-8 h-[300px] flex flex-row items-center justify-between">
+                    <div class="space-y-4 max-w-lg z-10">
+                         <div class="flex gap-2">
+                             <span class="text-[10px] uppercase tracking-wider text-green-400/80 border border-green-400/20 px-2 py-1 rounded-md">Shopify</span>
+                             <span class="text-[10px] uppercase tracking-wider text-zinc-400 border border-white/10 px-2 py-1 rounded-md">UX Audit</span>
+                         </div>
+                        <h3 class="text-2xl font-medium text-white tracking-tight">CKC Cares Ventures</h3>
+                        <p class="text-zinc-400 font-light">Technical store setup and UX audit for a digital wellness platform. Enhanced responsiveness and performance for the "House of YOU" initiative.</p>
+                    </div>
+                    <div class="hidden md:block p-4 bg-zinc-950/50 rounded-full border border-white/5">
+                        <span class="iconify text-white w-8 h-8" data-icon="lucide:shopping-bag"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section id="stack" class="animate-reveal delay-200">
+            <h2 class="text-2xl font-medium tracking-tight text-white mb-12">Tech Stack &amp; Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Dev -->
+                <div class="space-y-6">
+                    <h3 class="text-sm font-medium text-zinc-500 uppercase tracking-widest flex items-center gap-2">
+                        <span class="iconify" data-icon="lucide:code-2"></span> Development
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-md border border-white/10 bg-white/5 text-sm text-zinc-300 hover:bg-white/10 transition-colors">React</span>
+                        <span class="px-3 py-1.5 rounded-md border border-white/10 bg-white/5 text-sm text-zinc-300 hover:bg-white/10 transition-colors">Next.js</span>
+                        <span class="px-3 py-1.5 rounded-md border border-white/10 bg-white/5 text-sm text-zinc-300 hover:bg-white/10 transition-colors">Astro</span>
+                        <span class="px-3 py-1.5 rounded-md border border-white/10 bg-white/5 text-sm text-zinc-300 hover:bg-white/10 transition-colors">TailwindCSS</span>
+                        <span class="px-3 py-1.5 rounded-md border border-white/10 bg-white/5 text-sm text-zinc-300 hover:bg-white/10 transition-colors">Python</span>
+                        <span class="px-3 py-1.5 rounded-md border border-white/10 bg-white/5 text-sm text-zinc-300 hover:bg-white/10 transition-colors">Django REST</span>
+                        <span class="px-3 py-1.5 rounded-md border border-white/10 bg-white/5 text-sm text-zinc-300 hover:bg-white/10 transition-colors">PostgreSQL</span>
+                    </div>
+                </div>
+
+                <!-- DevOps & Cloud -->
+                <div class="space-y-6">
+                    <h3 class="text-sm font-medium text-zinc-500 uppercase tracking-widest flex items-center gap-2">
+                         <span class="iconify" data-icon="lucide:cloud"></span> DevOps &amp; Cloud
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-md border border-white/10 bg-white/5 text-sm text-zinc-300 hover:bg-white/10 transition-colors">Azure DevOps</span>
+                        <span class="px-3 py-1.5 rounded-md border border-white/10 bg-white/5 text-sm text-zinc-300 hover:bg-white/10 transition-colors">GitHub Actions</span>
+                        <span class="px-3 py-1.5 rounded-md border border-white/10 bg-white/5 text-sm text-zinc-300 hover:bg-white/10 transition-colors">Docker</span>
+                        <span class="px-3 py-1.5 rounded-md border border-white/10 bg-white/5 text-sm text-zinc-300 hover:bg-white/10 transition-colors">Vercel</span>
+                        <span class="px-3 py-1.5 rounded-md border border-white/10 bg-white/5 text-sm text-zinc-300 hover:bg-white/10 transition-colors">Azure Logic Apps</span>
+                    </div>
+                </div>
+
+                <!-- Community & Tools -->
+                <div class="space-y-6">
+                    <h3 class="text-sm font-medium text-zinc-500 uppercase tracking-widest flex items-center gap-2">
+                        <span class="iconify" data-icon="lucide:users"></span> Community &amp; Strategy
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-md border border-white/10 bg-white/5 text-sm text-zinc-300 hover:bg-white/10 transition-colors">GTM Strategy</span>
+                        <span class="px-3 py-1.5 rounded-md border border-white/10 bg-white/5 text-sm text-zinc-300 hover:bg-white/10 transition-colors">Event Planning</span>
+                        <span class="px-3 py-1.5 rounded-md border border-white/10 bg-white/5 text-sm text-zinc-300 hover:bg-white/10 transition-colors">Public Relations</span>
+                        <span class="px-3 py-1.5 rounded-md border border-white/10 bg-white/5 text-sm text-zinc-300 hover:bg-white/10 transition-colors">Power BI</span>
+                        <span class="px-3 py-1.5 rounded-md border border-white/10 bg-white/5 text-sm text-zinc-300 hover:bg-white/10 transition-colors">Figma</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience -->
+        <section id="experience" class="animate-reveal delay-300">
+            <h2 class="text-2xl font-medium tracking-tight text-white mb-12">Professional Experience</h2>
+            
+            <div class="relative border-l border-zinc-800 ml-3 space-y-12">
+                <!-- Role 1 -->
+                <div class="relative pl-8">
+                    <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-zinc-600 ring-4 ring-zinc-950"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
+                        <h3 class="text-lg font-medium text-white">Technical Strategy &amp; Engagement Intern</h3>
+                        <span class="text-xs font-mono text-zinc-500">Apr 2025 – Jun 2025</span>
+                    </div>
+                    <div class="text-sm text-zinc-400 mb-4">CKC Cares Ventures Ltd (London, UK)</div>
+                    <ul class="list-disc list-outside ml-4 text-sm text-zinc-400 space-y-2 font-light marker:text-zinc-600">
+                        <li>Contributed to "House of YOU" platform UX improvements and content structuring.</li>
+                        <li>Coordinated AI First Aid workshop design and delivery.</li>
+                        <li>Enhanced UI responsiveness on Shopify-based platforms.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="relative pl-8">
+                    <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-zinc-800 ring-4 ring-zinc-950"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
+                        <h3 class="text-lg font-medium text-white">Azure Community Lead</h3>
+                        <span class="text-xs font-mono text-zinc-500">Sep 2023 – Oct 2024</span>
+                    </div>
+                    <div class="text-sm text-zinc-400 mb-4">Reskilll (India &amp; UK)</div>
+                    <ul class="list-disc list-outside ml-4 text-sm text-zinc-400 space-y-2 font-light marker:text-zinc-600">
+                        <li>Organized Azure Developer Day and Copilot Day with Microsoft.</li>
+                        <li>Managed community engagement across 100+ institutions.</li>
+                        <li>Mentored students in DevOps and GitHub Copilot.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 3 -->
+                <div class="relative pl-8">
+                    <div class="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-zinc-800 ring-4 ring-zinc-950"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
+                        <h3 class="text-lg font-medium text-white">Business Analyst &amp; Process Consultant</h3>
+                        <span class="text-xs font-mono text-zinc-500">Jun 2024 – Present</span>
+                    </div>
+                    <div class="text-sm text-zinc-400 mb-4">Bizaek.com (Remote)</div>
+                    <ul class="list-disc list-outside ml-4 text-sm text-zinc-400 space-y-2 font-light marker:text-zinc-600">
+                        <li>Developed workflow automations using Power BI and Azure Logic Apps.</li>
+                        <li>Improved task efficiency by 30% through process optimization.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Speaking & Highlights -->
+        <section class="animate-reveal delay-300">
+            <h2 class="text-2xl font-medium tracking-tight text-white mb-8">Speaking &amp; Highlights</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="p-4 rounded-lg border border-white/5 bg-zinc-900/20 hover:bg-zinc-900/40 transition-colors">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="iconify text-purple-400" data-icon="lucide:mic"></span>
+                        <h4 class="text-white font-medium text-sm">AI Forward</h4>
+                    </div>
+                    <p class="text-xs text-zinc-400">"AI &amp; Future Technologies" - Online Webinar (Apr 2025)</p>
+                </div>
+
+                <div class="p-4 rounded-lg border border-white/5 bg-zinc-900/20 hover:bg-zinc-900/40 transition-colors">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="iconify text-blue-400" data-icon="lucide:presentation"></span>
+                        <h4 class="text-white font-medium text-sm">GitHub Copilot Launch</h4>
+                    </div>
+                    <p class="text-xs text-zinc-400">Microsoft Campus, Hyderabad (Jan 2024)</p>
+                </div>
+
+                <div class="p-4 rounded-lg border border-white/5 bg-zinc-900/20 hover:bg-zinc-900/40 transition-colors">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="iconify text-green-400" data-icon="lucide:users"></span>
+                        <h4 class="text-white font-medium text-sm">Azure Copilot Day</h4>
+                    </div>
+                    <p class="text-xs text-zinc-400">Event Lead - Warangal (Jul 2024)</p>
+                </div>
+
+                 <div class="p-4 rounded-lg border border-white/5 bg-zinc-900/20 hover:bg-zinc-900/40 transition-colors">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="iconify text-yellow-400" data-icon="lucide:lightbulb"></span>
+                        <h4 class="text-white font-medium text-sm">AI-Powered Clarity</h4>
+                    </div>
+                    <p class="text-xs text-zinc-400">Workshop Facilitator - London (Jul 2025)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="pt-20 border-t border-white/5">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-10">
+                <div class="space-y-6">
+                    <h2 class="text-4xl md:text-5xl font-medium tracking-tighter text-white">
+                        Start a <br>conversation.
+                    </h2>
+                    <a href="mailto:mukkera474@gmail.com" class="inline-flex items-center gap-2 text-zinc-400 hover:text-white transition-colors text-lg">
+                        mukkera474@gmail.com <span class="iconify" data-icon="lucide:arrow-up-right"></span>
+                    </a>
+                </div>
+
+                <div class="flex gap-6">
+                    <a href="https://twitter.com/" class="group p-2 rounded-full bg-white/5 hover:bg-white hover:text-black transition-all duration-300">
+                        <span class="iconify text-zinc-400 group-hover:text-black" data-icon="lucide:twitter" data-width="20"></span>
+                    </a>
+                    <a href="https://linkedin.com/in/pavankumarmukkera" class="group p-2 rounded-full bg-white/5 hover:bg-white hover:text-black transition-all duration-300">
+                        <span class="iconify text-zinc-400 group-hover:text-black" data-icon="lucide:linkedin" data-width="20"></span>
+                    </a>
+                    <a href="https://github.com/pavankumarmukkera" class="group p-2 rounded-full bg-white/5 hover:bg-white hover:text-black transition-all duration-300">
+                        <span class="iconify text-zinc-400 group-hover:text-black" data-icon="lucide:github" data-width="20"></span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-20 flex flex-col md:flex-row justify-between items-center text-xs text-zinc-600 gap-4">
+                <p>© 2025 Pavan Kumar Mukkera. All rights reserved.</p>
+                <p>Designed with precision. London, UK.</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        // UK Time Clock
+        function updateTime() {
+            const now = new Date();
+            const options = { timeZone: 'Europe/London', hour: '2-digit', minute: '2-digit', hour12: true };
+            const timeString = now.toLocaleTimeString('en-GB', options);
+            document.getElementById('uk-time').textContent = `LND ${timeString}`;
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+
+</body></html>
